@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3563e5b8995244b5879ac4b164f438e8" Name="Diagram1">
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.sysdiagrams" Width="1.5" PointX="1" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblCategory" Width="1.5" PointX="1" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblProject" Width="1.5" PointX="2.875" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblExperience" Width="1.5" PointX="2.875" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblService" Width="1.5" PointX="4.75" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblTestimonial" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="DbAcunmedyaAkademi1Model.FK_TblProject_TblCategory" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblEducation" Width="1.5" PointX="8.5" PointY="3.125" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblMessage" Width="1.5" PointX="6.625" PointY="2.875" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblSkill" Width="1.5" PointX="6.625" PointY="0.75" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblAbout" Width="1.5" PointX="8.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblSocialMedia" Width="1.5" PointX="10.375" PointY="3.125" />
+        <EntityTypeShape EntityType="DbAcunmedyaAkademi1Model.TblStats" Width="1.5" PointX="10.25" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

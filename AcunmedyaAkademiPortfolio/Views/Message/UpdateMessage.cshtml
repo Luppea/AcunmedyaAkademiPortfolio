@@ -1,0 +1,29 @@
+﻿@model AcunmedyaAkademiPortfolio.Models.TblMessage
+@{
+    ViewBag.Title = "UpdateMessage";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Mesaj Güncelleme</h2>
+<form method="post">
+    <label>Mesaj Id</label>
+    @Html.TextBoxFor(x => x.MessageId, new { @class = "form-control" })
+    <br />
+    <label>Mesajı Gönderen Kişinin Adı</label>
+    @Html.TextBoxFor(x => x.SenderName, new { @class = "form-control" })
+    <br />
+    <label>Mesajı Gönderen Kişinin Email'i</label>
+    @Html.TextBoxFor(x => x.SenderEmail, new { @class = "form-control" })
+    <br />
+    <label>Mesajın Konusu</label>
+    @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+    <br />
+    <label>Mesaj Detayı</label>
+    @Html.TextBoxFor(x => x.Detail, new { @class = "form-control" })
+    <br />
+    <label>Mesajın Durumu</label>
+    @Html.TextBoxFor(x => x.Status, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-info">Mesaj Güncelle</button>
+</form>
+

@@ -1,0 +1,80 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblMessage>
+
+<section id="contact" class="contact section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>İletişim</h2>
+        <p>Size en iyi hizmeti sunabilmemiz için talepleriniz ve sorularınız doğrultusunda bizimle iletişime geçebilirsiniz. Ek hizmetler, proje detayları veya iş birliği fırsatları hakkında bilgi almak için e-posta veya telefon yoluyla ulaşabilirsiniz.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+            <div class="col-lg-4">
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                    <i class="bi bi-geo-alt flex-shrink-0"></i>
+                    <div>
+                        <h3>Adres</h3>
+                        <p>İstanbul/Büyükçekmece</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                    <i class="bi bi-telephone flex-shrink-0"></i>
+                    <div>
+                        <h3>Telefon</h3>
+                        <p>+90 000 000 00 00</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+                <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                    <i class="bi bi-envelope flex-shrink-0"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>bbasakbeyza@gmail.com</p>
+                    </div>
+                </div><!-- End Info Item -->
+
+            </div>
+
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                    <div class="row gy-4">
+
+                        @foreach (var item in Model)
+                        {
+                            <div class="col-md-6">
+                                <input type="text" name="@item.SenderName" class="form-control" placeholder="İsim" required="">
+                            </div>
+
+                            <div class="col-md-6 ">
+                                <input type="email" class="form-control" name="@item.SenderEmail" placeholder="Email" required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <input type="text" class="form-control" name="@item.Subject" placeholder="Konu" required="">
+                            </div>
+
+                            <div class="col-md-12">
+                                <textarea class="form-control" name="@item.Detail" rows="6" placeholder="Açıklama" required=""></textarea>
+                            </div>
+
+                            <div class="col-md-12 text-center">
+                                <div class="loading">Gönderiliyor</div>
+                                <div class="@item.Status"></div>
+                                <button type="submit">Mesaj Gönder</button>
+                            </div>
+                        }
+
+                    </div>
+                </form>
+            </div><!-- End Contact Form -->
+
+        </div>
+
+    </div>
+
+</section><!-- /Contact Section -->

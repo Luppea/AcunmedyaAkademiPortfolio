@@ -1,0 +1,53 @@
+﻿@model List<AcunmedyaAkademiPortfolio.Models.TblAbout>
+
+<section id="about" class="about section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <h2>Hakkımda</h2>
+        <p>Merhaba! Ben bir web tasarımcısıyım ve kullanıcı odaklı, estetik aynı zamanda işlevsel web deneyimleri oluşturmayı seviyorum.
+        Haliç Üniversitesi'nde Yazılım Mühendisliği öğrencisiyim ve tasarım ile kodlama becerilerimi birleştirerek dijital 
+        dünyaya katkıda bulunuyorum. Modern web trendlerini yakından takip ederek, özgün ve yaratıcı projeler üretmeye 
+        odaklanıyorum. Kullanıcı deneyimini ön planda tutarak, hem görsel açıdan etkileyici hem de performans açısından güçlü web 
+        çözümleri geliştirmek benim en büyük tutkum.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+                <img src="https://media.licdn.com/dms/image/v2/D4D03AQHftNG-VG1G4g/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720483965802?e=1744243200&v=beta&t=WETIk9diNJM74FuRxbf2WmWl9HdHlT1VsrJ9oo4BGeM" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 content">
+                <h2>Web Tasarımcısı &amp; Web Geliştiricisi</h2>
+                <p>
+                </p>
+
+                <p class="py-3">
+                    Merhaba! Ben, modern ve işlevsel web tasarımları oluşturan bir web tasarımcısıyım.
+                    Kullanıcı odaklı, estetik ve performans açısından güçlü web siteleri tasarlayarak markaların dijitalde en iyi şekilde temsil edilmesini sağlıyorum.
+
+                    Siz de markanızı dijitalde güçlü bir şekilde temsil etmek, etkileyici ve kullanıcı dostu bir web sitesine sahip olmak istiyorsanız, birlikte çalışabiliriz! 🚀
+                </p>
+
+
+                @foreach (var item in Model)
+                {
+                    <div class="">
+                        <div class="col-lg-8">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Doğum Tarihi:</strong> <span>@item.Birthday</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>@item.Email</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Eğitim Durumu:</strong> <span>@item.Education</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>Şehir:</strong> <span>@item.Description</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+</section><!-- /About Section -->

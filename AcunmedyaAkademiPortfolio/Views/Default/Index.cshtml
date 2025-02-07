@@ -1,0 +1,71 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead","Default")
+
+<body class="index-page">
+
+    @Html.Action("PartialSidebar","Default")
+
+    <main class="main">
+
+        <!-- Hero Section -->
+        @Html.Action("PartialHeroSection", "Default")
+        <!-- /Hero Section -->
+        <!-- About Section -->
+
+        @Html.Action("PartialAbout", "Default")
+
+        <!-- Stats Section -->
+        @Html.Action("PartialStats", "Default")<!-- /Stats Section -->
+        <!-- Skills Section -->
+        @Html.Action("PartialSkill", "Default")
+        <!-- /Skills Section -->
+        <!-- Resume Section -->
+        <section id="resume" class="resume section">
+
+            <!-- Section Title -->
+            <div class="container section-title" data-aos="fade-up">
+                <h2>Öz Geçmişim</h2>
+                <p>
+                    Web tasarımı ve geliştirme alanında modern teknolojilerle kullanıcı odaklı çözümler üreten bir yazılım geliştiriciyim. Müşteriler için işlevsel ve estetik web projeleri oluştururken yapay zekâ teknolojilerini de entegre etmeye özen gösteriyorum. SQL ve Visual Studio gibi araçlarla çalışarak güçlü ve dinamik web uygulamaları geliştiriyorum. Kendimi sürekli geliştirmeye, yeni teknolojiler öğrenmeye ve yetkinliklerimi sertifikalarla desteklemeye önem veriyorum.
+
+                    Detaylı eğitim ve deneyim bilgilerime aşağıdan ulaşabilirsiniz.
+                </p>
+            </div><!-- End Section Title -->
+
+            <div class="container">
+
+                <div class="row">
+
+                    @Html.Action("PartialEducation", "Default")
+
+                    @Html.Action("PartialExperience", "Default")
+
+                </div>
+
+            </div>
+
+        </section><!-- /Resume Section -->
+        <!-- Portfolio Section -->
+        @Html.Action("PartialProjects", "Default")
+        <!-- Services Section -->
+        @Html.Action("PartialService", "Default")
+        <!-- Testimonials Section -->
+        @Html.Action("PartialTestimonial", "Default")
+        <!-- Contact Section -->
+        @Html.Action("PartialMessage", "Default")
+    </main>
+
+    @Html.Action("PartialSocialMedia","Default")
+
+    @Html.Action("PartialScripts","Default")
+
+</body>
+
+</html>
